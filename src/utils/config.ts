@@ -11,6 +11,10 @@ import {
   arbitrumGoerli,
   localhost,
   sepolia,
+  mainnet,
+  scrollTestnet,
+  thunderTestnet,
+  optimismSepolia,
 } from "wagmi/chains"
 
 const { wallets } = getDefaultWallets()
@@ -33,6 +37,10 @@ export const config = getDefaultConfig({
     },
   ],
   chains: [
+    mainnet,
+    scrollTestnet,
+    thunderTestnet,
+    optimismSepolia,
     arbitrum,
     arbitrumSepolia,
     arbitrumNova,

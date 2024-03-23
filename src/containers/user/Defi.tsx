@@ -8,10 +8,11 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
+import { DefiComponent } from "../read/DefiComponent"
 
 function Defi() {
   return (
-    <Card>
+    <Card className="text-left">
       <CardHeader>
         <CardTitle>DeFi</CardTitle>
         <CardDescription>
@@ -19,10 +20,9 @@ function Defi() {
           Zscore
         </CardDescription>
       </CardHeader>
-      <CardContent className="space-y-2"></CardContent>
-      <CardFooter>
-        <Button>Save DeFi</Button>
-      </CardFooter>
+      <CardContent className="space-y-2">
+        <DefiComponent />
+      </CardContent>
     </Card>
   )
 }
