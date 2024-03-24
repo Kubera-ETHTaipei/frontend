@@ -25,7 +25,7 @@ function ActiveDefi() {
     )
     const json = await data.json()
     console.log(json)
-    if (json[0]?.score > creditScore) {
+    if (creditScore !== null && json[0]?.score > creditScore) {
       setUsed(true)
       setData(true)
       console.log("Eligible")

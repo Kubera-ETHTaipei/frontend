@@ -8,7 +8,7 @@ import Layout from "@/providers/Layout"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Create Arbitrum DApp",
+  title: "Kubera",
   description: "Template for creating a DApp on Arbitrum",
 }
 

@@ -5,13 +5,8 @@ import {
   ledgerWallet,
 } from "@rainbow-me/rainbowkit/wallets"
 import {
-  arbitrum,
-  arbitrumSepolia,
-  arbitrumNova,
-  arbitrumGoerli,
   localhost,
   sepolia,
-  mainnet,
   scrollTestnet,
   thunderTestnet,
   optimismSepolia,
@@ -37,19 +32,12 @@ export const config = getDefaultConfig({
     },
   ],
   chains: [
-    mainnet,
+    sepolia,
     scrollTestnet,
     thunderTestnet,
     optimismSepolia,
-    arbitrum,
-    arbitrumSepolia,
-    arbitrumNova,
-    arbitrumGoerli,
     localhost,
-    sepolia,
-    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === "true"
-      ? [arbitrumSepolia, arbitrumNova, arbitrumGoerli]
-      : []),
+    ...(process.env.NEXT_PUBLIC_ENABLE_TESTNETS === "true" ? [sepolia] : []),
   ],
   ssr: true,
 })
